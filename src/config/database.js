@@ -11,7 +11,7 @@ module.exports = {
     underscoredAll: true
   },
   dialectOptions: {
-    socketPath: `${process.env.SOCKET_PATH}` || undefined,
+    socketPath: process.env.SOCKET_PATH || undefined,
     timezone: 'Etc/GMT-3'
   },
   pool: {
