@@ -1,8 +1,6 @@
 import Sequelize from 'sequelize'
-
-import Domain from '../../app/models/Domain'
-import User from '../../app/models/User'
-
+import Domain from '../app/models/Domain'
+import User from '../app/models/User'
 import databaseConfig from '../config/database'
 
 const models = [Domain, User]
