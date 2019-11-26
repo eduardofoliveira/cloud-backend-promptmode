@@ -11,9 +11,7 @@ module.exports = {
     underscoredAll: true
   },
   dialectOptions: {
-    socketPath: process.env.SOCKET_PATH
-      ? '/var/run/mysqld/mysqld.sock'
-      : undefined,
+    socketPath: process.env.SOCKET_PATH || undefined,
     timezone: 'Etc/GMT-3'
   },
   pool: {
