@@ -1,9 +1,11 @@
 import Sequelize from 'sequelize'
 import Domain from '../app/models/Domain'
 import User from '../app/models/User'
+import Holiday from '../app/models/Holiday'
+import Schedule from '../app/models/Schedule'
 import databaseConfig from '../config/database'
 
-const models = [Domain, User]
+const models = [Domain, User, Holiday, Schedule]
 
 class Database {
   constructor () {
